@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agregar Producto</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700display=swap" rel="stylesheet"> 
+	<link type='text/css' href='{% static "css/estiloRegistro.css" %}' rel='stylesheet'/>
+</head>
+<body>
+	<main>
+        <div id="formularioPrincipal">
+            <form action="" class="formulario" id="formulario" method="post">
+                {% csrf_token %}
+                
+                {{form}}
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="formulario__btn">AGREGAR</button>
+                    <button type="reset" class="formulario__btn">LIMPIAR</button>
+                </div>
+	<script src="formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
